@@ -1,106 +1,367 @@
-.layout--twocol-section {
-  display: block;
+@font-face {
+  font-family: "gilroy-regular";
+  src: url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/regular/Gilroy-Regular.eot);
+  src: url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/regular/Gilroy-Regular.eot#iefix)
+      format("embedded-opentype"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/regular/Gilroy-Regular.woff2)
+      format("woff2"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/regular/Gilroy-Regular.woff)
+      format("woff"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/regular/Gilroy-Regular.ttf)
+      format("truetype"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/regular/Gilroy-Regular.svg#Gilroy-Regular)
+      format("svg");
 }
-.date-container {
-  display: flex;
-  align-items: center;
+@font-face {
+  font-family: "gilroy-medium";
+  src: url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/medium/Gilroy-Medium.eot);
+  src: url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/medium/Gilroy-Medium.eot#iefix)
+      format("embedded-opentype"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/medium/Gilroy-Medium.woff2)
+      format("woff2"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/medium/Gilroy-Medium.woff)
+      format("woff"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/medium/Gilroy-Medium.ttf)
+      format("truetype"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/medium/Gilroy-Medium.svg#Gilroy-Medium)
+      format("svg");
 }
-.date {
-  margin-left: 5px;
+@font-face {
+  font-family: "gilroy-light";
+  src: url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/light/Gilroy-Light.eot);
+  src: url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/light/Gilroy-Light.eot#iefix)
+      format("embedded-opentype"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/light/Gilroy-Light.woff2)
+      format("woff2"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/light/Gilroy-Light.woff)
+      format("woff"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/light/Gilroy-Light.ttf)
+      format("truetype"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/light/Gilroy-Light.svg#Gilroy-Light)
+      format("svg");
 }
-.pitch {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 150%;
-
-  /* identical to box height, or 60px */
-
-  color: #000000;
+@font-face {
+  font-family: "gilroy-semibold";
+  src: url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/semibold/Gilroy-SemiBold.eot);
+  src: url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/semibold/Gilroy-SemiBold.eot#iefix)
+      format("embedded-opentype"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/semibold/Gilroy-SemiBold.woff2)
+      format("woff2"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/semibold/Gilroy-SemiBold.woff)
+      format("woff"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/semibold/Gilroy-SemiBold.ttf)
+      format("truetype"),
+    url(https://buidl.so/themes/buidlerstribe_bootstrap/fonts/gilroy/semibold/Gilroy-SemiBold.svg#Gilroy-SemiBold)
+      format("svg");
 }
-.apply-btn {
-  /* background: #407bff;
-  padding: 12px, 140px, 12px, 140px;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 140px;
-  gap: 10px;
-  color: white;
-  background: #407bff;
-  border-radius: 12px;
-  margin-top: 15px;
+* {
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 18px;
+  --font-size-l: 20px;
+  --font-size-xl: 28px;
+  --font-size-xxl: 34px;
+  --font-size-large-heading: 56px;
+  --font-size-number: 100px;
+  --font-size-column-heading: 14px;
+  --font-size-column-link: 12px;
 }
-.coninDCX-title {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 64px !important;
-  line-height: 150%;
-  color: #000000;
-  margin: 10px 0px;
-  margin: 23px 0 35px -6px !important;
+@media screen and (min-width: 720px) {
+  * {
+    --font-size-xs: 14px;
+    --font-size-s: 16px;
+    --font-size-m: 20px;
+    --font-size-l: 20px;
+    --font-size-xl: 32px;
+    --font-size-xxl: 40px;
+    --font-size-large-heading: 56px;
+    --font-size-number: 120px;
+    --font-size-column-heading: 16px;
+    --font-size-column-link: 14px;
+  }
 }
-.coinDCX-parent p {
-  width: 57% !important;
+@media screen and (min-width: 1024px) {
+  * {
+    --font-size-l: 24px;
+    --font-size-large-heading: 64px;
+    --font-size-number: 150px;
+  }
 }
-.prize-money-parent {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 120px;
+* {
+  --margin-s: 12px;
+  --margin-m: 16px;
+  --margin-l: 24px;
+  --margin-xl: 36px;
+  --margin-xxl: 42px;
+  --padding-vs: 6px;
+  --padding-s: 8px;
+  --padding-m: 12px;
+  --padding-l: 20px;
+  --padding-xl: 30px;
+  --padding-xxL: 48px;
+  --border-radius-s: 6px;
+  --border-radius-m: 12px;
+  --border-radius-l: 16px;
 }
-.prize-money-parent img {
-  position: relative;
-  bottom: 83px;
-  height: 367px;
+@media screen and (min-width: 720px) {
+  * {
+    --margin-s: 12px;
+    --margin-m: 18px;
+    --margin-l: 24px;
+    --margin-xl: 36px;
+    --margin-xxl: 42px;
+    --padding-vs: 8px;
+    --padding-s: 12px;
+    --padding-m: 16px;
+    --padding-l: 24px;
+    --padding-xl: 36px;
+    --padding-xxL: 64px;
+    --padding-12-24: 12px 16px 12px 24px;
+    --border-radius-s: 8px;
+    --border-radius-m: 16px;
+    --border-radius-l: 24px;
+  }
 }
-.left-prize p {
-  color: grey;
+@media screen and (min-width: 1024px) {
 }
-.left-prize .logo img {
-  width: 287px;
-  height: 59px;
+* {
+  --color-text: #000000;
+  --color-background: #ffffff;
+  --color-background-2: #f5f8ff;
+  --color-cta-blue: #136fd6;
+  --color-cta-text: #ffffff;
+  --color-blue-op: #2d9cdb10;
+  --color-blue: #2d9cdb;
+  --color-blue-text: #3b82f6;
+  --color-blue-number: #76a5e6;
+  --color-darkblue: #165fa3;
+  --color-orange-op: #f2994a10;
+  --color-orange: #f2994a;
+  --color-green-op: #21965310;
+  --color-green: #219653;
+  --color-purple-op: #9b51e010;
+  --color-purple: #9b51e0;
+  --color-red-op: #f6523c10;
+  --color-red: #f6523c;
+  --lg-darkblue: linear-gradient(90deg, #000c40 0%, #607d8b 100%);
+  --lg-black: linear-gradient(90deg, #536976 0%, #292e49 100%);
+  --lg-green: linear-gradient(98.55deg, #40bc75 46.92%, #1d643f 93.46%);
+  --lg-orange: linear-gradient(90deg, #de6262 0%, #ffb88c 100%);
+  --tablet-size: 720px;
+  --laptop-size: 1024px;
+  --max-width: 1200px;
+  --max-width-large: 1300px;
+  --gutter: 24px;
 }
-.left-prize h2 {
-  font-size: 57px;
-  font-weight: bold;
-  margin-top: 28px;
-  margin-right: ;
-  position: relative;
-  right: 4px;
+@media screen and (min-width: var(--tablet-size)) {
+  * {
+    --gutter: 40px;
+  }
 }
-.prize-money-parent h1 {
-  font-size: 60px;
+@media screen and (min-width: var(--laptop-size)) {
+  * {
+    --gutter: 100px;
+  }
 }
-.mentor-title {
-  text-align: center;
-  color: grey !important;
-  margin-bottom: 50px !important;
+body {
+  font-family: "gilroy-regular", sans-serif;
+  color: #808080;
+  background: #fafafa;
 }
-.mentor-parent {
-  width: 975px;
-  justify-content: space-between;
+/* for mobile devices */
+@media screen and (min-width: 720px) {
+  .layout--twocol-section {
+    display: block;
+  }
+  .date-container {
+    display: flex;
+    align-items: center;
+  }
+  .date {
+    margin-left: 5px;
+  }
+  .pitch {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    color: #000000;
+  }
+  .apply-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 140px;
+    gap: 10px;
+    color: white;
+    background: #407bff;
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+  .coninDCX-title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px !important;
+    line-height: 150%;
+    color: #000000;
+    margin: 10px 0px;
+    margin: 23px 0 35px -6px !important;
+  }
+  .coinDCX-parent p {
+    width: 57% !important;
+  }
+  .prize-money-parent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120px;
+  }
+  .prize-money-parent img {
+    position: relative;
+    bottom: 83px;
+    height: 367px;
+  }
+  .left-prize p {
+    color: grey;
+  }
+  .left-prize .logo img {
+    width: 287px;
+    height: 59px;
+  }
+  .left-prize h2 {
+    font-size: 57px;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-right: ;
+    position: relative;
+    right: 4px;
+  }
+  .prize-money-parent h1 {
+    font-size: 60px;
+  }
+  .mentor-title {
+    text-align: center;
+    color: grey !important;
+    margin-bottom: 50px !important;
+  }
+  .mentor-parent {
+    width: 975px;
+    justify-content: space-between;
+  }
+  .program-view-mentor-profile {
+    margin: 10 20px;
+    border-radius: 0% !important;
+    -webkit-border-radius: 0% !important;
+    -moz-border-radius: 0% !important;
+    -ms-border-radius: 0% !important;
+    -o-border-radius: 0% !important;
+  }
+  .faq-title {
+    text-align: left !important;
+    margin-bottom: 24px !important;
+  }
+  .faq-detail {
+    width: 57% !important;
+    margin-bottom: 105px;
+  }
 }
-.program-view-mentor-profile {
-  margin: 10 20px;
-  border-radius: 0% !important;
-  -webkit-border-radius: 0% !important;
-  -moz-border-radius: 0% !important;
-  -ms-border-radius: 0% !important;
-  -o-border-radius: 0% !important;
-}
-.faq-title {
-  text-align: left !important;
-  margin-bottom: 24px !important;
-}
-.faq-detail {
-  width: 57% !important;
-  margin-bottom: 105px;
+@media screen and (min-width: 1240px) {
+  .layout--twocol-section {
+    display: block;
+  }
+  .date-container {
+    display: flex;
+    align-items: center;
+  }
+  .date {
+    margin-left: 5px;
+  }
+  .pitch {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    color: #000000;
+  }
+  .apply-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 140px;
+    gap: 10px;
+    color: white;
+    background: #407bff;
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+  .coninDCX-title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px !important;
+    line-height: 150%;
+    color: #000000;
+    margin: 10px 0px;
+    margin: 23px 0 35px -6px !important;
+  }
+  .coinDCX-parent p {
+    width: 57% !important;
+  }
+  .prize-money-parent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120px;
+  }
+  .prize-money-parent img {
+    position: relative;
+    bottom: 83px;
+    height: 367px;
+  }
+  .left-prize p {
+    color: grey;
+  }
+  .left-prize .logo img {
+    width: 287px;
+    height: 59px;
+  }
+  .left-prize h2 {
+    font-size: 57px;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-right: ;
+    position: relative;
+    right: 4px;
+  }
+  .prize-money-parent h1 {
+    font-size: 60px;
+  }
+  .mentor-title {
+    text-align: center;
+    color: grey !important;
+    margin-bottom: 50px !important;
+  }
+  .mentor-parent {
+    width: 975px;
+    justify-content: space-between;
+  }
+  .program-view-mentor-profile {
+    margin: 10 20px;
+    border-radius: 0% !important;
+    -webkit-border-radius: 0% !important;
+    -moz-border-radius: 0% !important;
+    -ms-border-radius: 0% !important;
+    -o-border-radius: 0% !important;
+  }
+  .faq-title {
+    text-align: left !important;
+    margin-bottom: 24px !important;
+  }
+  .faq-detail {
+    width: 57% !important;
+    margin-bottom: 105px;
+  }
 }
